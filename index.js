@@ -2,8 +2,7 @@
 
 module.exports = function(pincode, callback) {
 
-  const currentDir = process.cwd();
-  const file = currentDir+'/info.json';
+  const file = './info.json';
   const fs = require('fs');
   const async = require('async');
   var pincode = pincode.toString();

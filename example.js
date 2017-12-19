@@ -1,5 +1,4 @@
-var currentDir = process.cwd();
-var pincodeSearch = require(currentDir+'/index.js');
+var pincodeSearch = require('./index.js');
 var async = require('async');
 
 async.auto({
@@ -8,4 +7,5 @@ async.auto({
   }
 },function(err,results){
   console.log(results.getPinInfo);
+
 })
