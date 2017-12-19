@@ -1,6 +1,6 @@
 {
   "name": "pincodeindia",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "This package retrieves the location information according to the pincode entered only for India.",
   "main": "index.js",
   "scripts": {
