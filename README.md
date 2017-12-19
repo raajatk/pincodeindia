@@ -1,13 +1,13 @@
 # Pincodeindia
 npm for fetching location info by entering pincoode
 
-# For installing
+## For installing
 >npm install pincodeindia
 
-# For testing the example.js, just run:
+## For testing the example.js, just run:
 >node example.js
 
-# Example
+## Example
 >var pincodeSearch = require('./index.js');
 >var async = require('async');
 
