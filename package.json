@@ -1,6 +1,6 @@
 {
   "name": "pincodeindia",
-  "version": "2.0.1",
+  "version": "2.0.5",
   "description": "This package retrieves the location information according to the pincode entered only for India.",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/rajatk69/pincodeindia/issues"
   },
-  "homepage": "https://github.com/rajatk69/pincodeindia#readme"
+  "homepage": "https://github.com/rajatk69/pincodeindia#readme",
+  "dependencies":{
+    "async": "^2.4.0"
+  }
 }

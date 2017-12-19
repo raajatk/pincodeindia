@@ -2,14 +2,20 @@
 
 module.exports = function(pincode, callback) {
 
-  const file = require('./info.json');
+  const file = require.resolve('./info.json');
   const fs = require('fs');
   const async = require('async');
   var pincode = pincode.toString();
 
   async.auto({
-    searchPin:function(next){
-      var pinArray = file;
+    readFile:function(next){
+      fs.readFile(file,'utf8',function(err,data){
+        var obj=JSON.parse(data);
+        next(null,obj);
+      });
+    },
+    searchPin:['readFile',function(result, next){
+      var pinArray = result.readFile;
       var resObj = [];
       async.forEach(pinArray,function(pinObj, arrNext){
         if(pincode == pinObj.pincode){
@@ -19,7 +25,7 @@ module.exports = function(pincode, callback) {
       },function(err){
         next(null,resObj);
       })
-    }
+    }]
   },function(err, results){
     if(results.searchPin.length>0){
       var resObj = {
@@ -38,5 +44,3 @@ module.exports = function(pincode, callback) {
     }
   })
 };
-
-// module.exports = 'hello';
