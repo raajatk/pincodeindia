@@ -1,13 +1,13 @@
-# pincodeindia
+# Pincodeindia
 npm for fetching location info by entering pincoode
 
-# for installing
+# For installing
 npm install pincodeindia
 
-# for testing the example.js, just run:
+# For testing the example.js, just run:
 >node example.js
 
-# example
+# Example
 >var pincodeSearch = require('./index.js');
 >var async = require('async');
 
@@ -19,5 +19,8 @@ npm install pincodeindia
 >  console.log(results.getPinInfo);
 >
 >})
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details
 
 
