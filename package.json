@@ -1,0 +1,19 @@
+{
+  "name": "pincodeindia",
+  "version": "1.0.0",
+  "description": "This package retrieves the location information according to the pincode entered only for India.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajatk69/pincodeindia.git"
+  },
+  "author": "“Rajat <rajatkatiyar2009@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rajatk69/pincodeindia/issues"
+  },
+  "homepage": "https://github.com/rajatk69/pincodeindia#readme"
+}
