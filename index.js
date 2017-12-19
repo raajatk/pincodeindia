@@ -2,7 +2,7 @@
 
 module.exports = function(pincode, callback) {
 
-  const file = './info.json';
+  const file = './node_modules/pincodeindia/info.json';
   const fs = require('fs');
   const async = require('async');
   var pincode = pincode.toString();
@@ -41,7 +41,7 @@ module.exports = function(pincode, callback) {
         message:"Sorry! No data available for the queried PinCode."
       }
       callback(null,resObj);
-    }    
+    }
   })
 };
 
