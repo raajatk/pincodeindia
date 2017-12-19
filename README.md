@@ -2,7 +2,7 @@
 npm for fetching location info by entering pincoode
 
 # For installing
-npm install pincodeindia
+>npm install pincodeindia
 
 # For testing the example.js, just run:
 >node example.js
